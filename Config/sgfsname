@@ -1,0 +1,9 @@
+/dev/mapper/vg_telaeudbpkg03_data/lv_telaeudbpkg03	/telaeudbpkg03
+/dev/mapper/vg_telaeudbpkg03_data/lv_telaeudbpkg03_ora	/telaeudbpkg03/app/oracle
+/dev/mapper/vg_telaeudbpkg03_data/lv_telaeudbpkg03_users	/telaeudbpkg03/users
+/dev/mapper/vg_telaeudbpkg03_data/lv_telaeudbpkg03_data	/telaeudbpkg03_gmeuelu1_data
+/dev/mapper/vg_telaeudbpkg03_data/lv_telaeudbpkg03_temp	/telaeudbpkg03_gmeuelu1_temp
+/dev/mapper/vg_telaeudbpkg03_log/lv_telaeudbpkg03_redo	/telaeudbpkg03_gmeuelu1_redo
+/dev/mapper/vg_telaeudbpkg03_log/lv_telaeudbpkg03_credo	/telaeudbpkg03_gmeuelu1_credo
+/dev/mapper/vg_telaeudbpkg03_log/lv_telaeudbpkg03_arch	/telaeudbpkg03_gmeuelu1_arch
+/dev/mapper/vg_telaeudbpkg03_back/lv_telaeudbpkg03_back	/telaeudbpkg03_gmeuelu1_back
