@@ -16,11 +16,11 @@ def ipVal(obj):
 
 mpub=input("Enter ChefMaster Public IP: ")
 mpub=ipVal(mpub)
-mpvt=input("Enter ChefMaster Pvt IP: ")
+mpvt=input("Enter ChefMaster Pvt IP   : ")
 mpvt=ipVal(mpvt)
-wpub=input("Enter ChefWS Public IP: ")
+wpub=input("Enter ChefWS Public IP    : ")
 wpub=ipVal(wpub)
-wpvt=input("Enter ChefWS Pvt IP: ")
+wpvt=input("Enter ChefWS Pvt IP       : ")
 wpvt=ipVal(wpvt)
 
 def setPubVal (var):
@@ -37,6 +37,9 @@ wpubVal=setPubVal(wpub)
 mpvtVal=setPvtVal(mpvt)
 wpvtVal=setPvtVal(wpvt)
 
+print ("\nBacking up /etc/hosts file with todays date")
+system("cp -p /etc/hosts /etc/hosts.`date +%Y%m%d-%H%M`")
+
 print ("Removing old amazonaws.com entris in /etc/hosts file")
 system("sed -i '/amazonaws.com/d' /etc/hosts")
 
@@ -51,7 +54,6 @@ with open ('/etc/hosts','a') as hf:
     hf.write(wpvtVal)
     hf.write("\n")
 
-
-
-
-
+print ("/etc/hosts file is updated with new entries \n")
+system("cat /etc/hosts | grep amazonaws.com")
+print(" ")
