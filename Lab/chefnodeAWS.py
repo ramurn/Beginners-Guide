@@ -1,3 +1,4 @@
+from os import system
 
 def ipVal(obj):
     while True:
@@ -36,7 +37,8 @@ wpubVal=setPubVal(wpub)
 mpvtVal=setPvtVal(mpvt)
 wpvtVal=setPvtVal(wpvt)
 
-
+print ("Removing old amazonaws.com entris in /etc/hosts file")
+system("sed -i '/amazonaws.com/d' /etc/hosts")
 
 with open ('/etc/hosts','a') as hf:
     hf.write("\n")
