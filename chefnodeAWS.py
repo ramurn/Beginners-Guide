@@ -1,3 +1,6 @@
+#Purpose: Update chef note hosts if your chef hostname & IPs are hosted in AWS and are changing every time, it starts up
+#Date: 17-Aug-2018
+
 from os import system
 
 def ipVal(obj):
